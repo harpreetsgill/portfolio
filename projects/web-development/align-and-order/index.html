@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Align & Order</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/nav-bar.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://kit.fontawesome.com/389c2c941e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="nav-btn nav-bar">
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png"></a>
+		</div>
+
+		<div class="nav-links">
+			<ul class="nav-bar-collapse" id="collapseMenu">
+				<li><a href="about.html">About</a></li>
+				<li>
+					<a id="prodLink" onmouseover="toggleProdList()" onclick="toggleProdList()" href="#">Products</a>
+					<ul id="product-list">
+						<li><a href="clocks.html">Clocks</a></li>
+						<li><a href="lamps.html">Lamps</a></li>
+						<li><a href="chairs.html">Chairs</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<div class="nav-cart">
+				<a href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i>	</a>
+			</div>
+
+			<div class="menu-toggle" id="menuToggle" onclick="toggleMenu();">
+				<i class="fas fa-bars fa-lg"></i>
+			</div>
+		</div>
+
+	</nav>
+
+	<div class="jumbo-container">
+
+	</div>
+
+
+	<div class="jumbo-text">
+		<h1 style="font-weight: 300">Simplify your life</h1>
+		<h3 style="font-weight: 400; margin-top: -20px;">with Align & Order</h3>
+	</div>
+	<div id="container">
+
+	<h1>Products</h1>
+	<div class="grid-main">
+
+
+		<div class="cell-main">
+			<div class="product-card">
+				<a href="clocks.html"><img class="product-image" src="img/pd-clock.jpg"></a>
+			</div>
+			<div class="product-card">
+				<a href="lamps.html"><img class="product-image" src="img/pd-lamp.jpg"></a>
+			</div>
+			<div class="product-card">
+				<a href="chairs.html"><img class="product-image" src="img/pd-chair.jpg"></a>
+			</div>
+		</div>
+
+		<div class="cell-sub">
+			<div class="banner"><h3>Our mission is to simplify you life with simple and functional products.</h3></div>
+			<div class="banner"><h3>We source our raw materials from places that are eco friendly and sustainable.</h3></div>
+		</div>
+
+	</div>
+	</div>	
+
+	<footer>
+		<div class="footer-flex">
+			<div>
+				<h2>Contact</h2>
+				<a href="mailto:faf">abc@gmail.com</a>
+			</div>
+
+			<div>
+				<h2 style="text-align: right">Follow</h2>
+				<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+			</div>
+		</div>
+		<div>
+			<p style="text-align:center">&copy; 2020 <a href="https://gillharpreet.com">Harpreet Singh Gill</a></p>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

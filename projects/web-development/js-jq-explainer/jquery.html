@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+Harpreet Singh Gill
+A01083219
+MDIA 2294
+ -->
+
+<head>
+	<title>jQuery</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WJFLBHS');</script>
+	<!-- End Google Tag Manager -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script>
+
+ 		$(document).ready(function () {
+
+            $("#myAccordion").accordion({
+                heightStyle: "content",
+                collapsible: true
+
+            });
+        });
+
+ 	</script>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJFLBHS"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<header>
+		<div class="title">
+			<h1>MDIA 2294: Final Project</h1>
+			<h3>Harpreet Singh Gill - A01083219</h3>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="plugin.html">Plug-in</a></li>
+				<li class="nav-active"><a href="jquery.html">jQuery</a></li>	
+				<li><a href="javascript.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Accordionn plug-in source: https://jqueryui.com/accordion/ -->
+	<div id="myAccordion" class="jq-container">
+		
+		<h3 class="jq-topic-heading" style="width: 65px;">Selectors</h3>
+		<div class="jq-expl">
+
+			<!-- jQuery Definition -->
+			<span class="desc">
+				<h3 class="sub-topic-heading">jQuery</h3>
+				<p>jQuery is a JavaScript library that reduces the amount of code one would otherwise had to write in JavaScript to achieve the same result.</p>
+			</span>
+
+			<span class="code">
+				<h3 class="sub-topic-heading">Code</h3>
+
+				<p>&lt;<span class='c-red'>p</span>&gt;I am a &lt;<span class='c-red'>span</span> <span class='c-green'>id</span>=<span class='c-yellow'>"appClr"</span>&gt;red&lt;/<span class='c-red'>span</span>&gt; apple.&lt;/<span class='c-red'>p</span>&gt;</p>
+				<br>
+
+				<p>&lt;<span class="c-red">script</span>&gt;</p>
+				<span class="ind"><span class='c-red'>$</span>(<span class='c-yellow'>"#appClr"</span>).<span class='c-blue'>text</span>(<span class='c-yellow'>"<input id="txtJQDef" class="txtCodeBox" style="width: 70px;" value="yellow">"</span>);</span>
+				<p>&lt;<span class="c-red">/script</span>&gt;</p>
+
+				<br>
+				<button id="jQueryDef" style="float: right">Run</button>
+			</span>
+
+			<span class="result">
+				<h3 class="sub-topic-heading">Output</h3>
+				<span>I am a <span id="appClr">red</span> apple.</span>
+			</span>
+
+			<!-- Selector types -->
+			<span class="desc" style="border-bottom: none; margin-bottom: 40px;">
+				<h3 class="sub-topic-heading">Selector types</h3>
+				<p>jQuery selectors are how we target the html and css elements.</p>
+				<p>Some of the ways in which an html element can be targeted are:</p>
+				<ul>
+					<li>Identifier: #appClr</li>
+					<li>Classes: .className</li>
+					<li>Tags: div, span</li>
+					<li>Tags can be filtered using their atttributes: input[type="number"]</li>
+				</ul>
+			</span>
+
+			<span class="code" style="border-bottom: none; margin-bottom: 40px;">
+				<h3 class="sub-topic-heading">Code</h3>
+
+				<p>&lt;<span class='c-red'>p</span>&gt;This paragraph tag has &lt;<span class='c-red'>span</span> <span class='c-green'>id</span>=<span class='c-yellow'>"unique"</span>&gt;an identifier&lt;/<span class='c-red'>span</span>&gt; and two classes- 
+
+					&lt;<span class='c-red'>span</span> <span class='c-green'>class</span>=<span class='c-yellow'>"odd"</span>&gt;first class, &lt;/<span class='c-red'>span</span>&gt;
+					&lt;<span class='c-red'>span</span> <span class='c-green'>class</span>=<span class='c-yellow'>"even"</span>&gt;second class, &lt;/<span class='c-red'>span</span>&gt;
+					&lt;<span class='c-red'>span</span> <span class='c-green'>class</span>=<span class='c-yellow'>"odd"</span>&gt;third class&lt;/<span class='c-red'>span</span>&gt;.&lt;/<span class='c-red'>p</span>&gt;</p>
+				<br>
+
+				<p>&lt;<span class="c-red">script</span>&gt;</p>
+
+				<span class="ind">
+
+					<span class='c-red'>$</span>(<span class='c-yellow'><select id="JQOpt"><option id="id">"#unique"</option><option class="clOdd">".odd"</option><option>".even"</option></select></span>).<span class='c-blue'>text</span>(<span class='c-yellow'>"<input id="txtJQSelTyp" class="txtCodeBox" style="width: 60px;" value="Txt">"</span>);</span>
+
+				<p>&lt;<span class="c-red">/script</span>&gt;</p>
+
+				<br>
+				<button id="jQuerySlctr" style="float: right">Run</button>
+			</span>
+
+			<span class="result" style="border-bottom: none; margin-bottom: 40px;">
+				<h3 class="sub-topic-heading">Output</h3>
+				<p class="slctAns">This paragraph tag has an identifier and two classes- first class, second class, third class.</p>
+			</span>
+
+		</div>
+
+
+
+		<h3 class="jq-topic-heading" style="width: 215px">DOM: Document Object Model</h3>
+		
+		<div class="jq-expl">
+
+			<!-- DOM -->
+			<span class="desc" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Get and Set actions</h3>
+				<p>Value of any element's attribute can be extraced and set using the .attr action.</p>
+			</span>
+
+			<span class="code" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Code</h3>
+
+				<p>&lt;<span class='c-red'>p</span>&gt;I am an &lt;<span class='c-red'>span</span> <span class='c-green'>id</span>=<span class='c-yellow'>"appClr"</span> <span class='c-green'>style</span>=<span class='c-yellow'>"<span class='c-blue'>color</span>:<span class='c-blue'>red</span>;"</span>&gt;apple&lt;/<span class='c-red'>span</span>&gt;.&lt;/<span class='c-red'>p</span>&gt;</p>
+				<br>
+
+				<p>&lt;<span class="c-red">script</span>&gt;</p>
+				<span class="ind"><span class='c-red'>$</span>(<span class='c-yellow'>"#appClr"</span>).<span class='c-blue'>attr</span>(<span class='c-yellow'>"style", "<input id="txtJQGetSet" class="txtCodeBox" style="width: 200px;" value="color:blue;">"</span>);</span>
+				<p>&lt;<span class="c-red">/script</span>&gt;</p>
+
+				<br>
+				<button id="jQueryGetSet" style="float: right">Run</button>
+			</span>
+
+			<span class="result" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Output</h3>
+				<span>I am an <span id="appClrGetSet" style="color:red;">apple</span>.</span>
+			</span>
+
+			
+
+		</div>
+
+
+		<h3 class="jq-topic-heading" style="width: 130px">Animation Actions</h3>
+		<div class="jq-expl">
+
+			<!-- Effects Actions -->
+			<span class="desc" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Effects Action</h3>
+				<p>The jQuery library has some built-in effects that can be used to animate the elements.</p>
+				<p>Three basic effects are:</p>
+				<ol>
+					<li>show and hide</li>
+					<li>slideUp and slideDown</li>
+					<li>fadeIn and fadeOut</li>
+				</ol>
+				<p>These pairs can also be toggled using the following actions:</p>
+				<ol>
+					<li>toggle: to show or hide</li>
+					<li>slideToggle: to slide</li>
+					<li>fadeToggle: to fade</li>
+				</ol>
+			</span>
+
+			<span class="code" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Code</h3>
+
+				<p>&lt;<span class='c-red'>p</span>&gt;I can &lt;<span class='c-red'>span</span> <span class='c-green'>id</span>=<span class='c-yellow'>"txtAnmt"</span>&gt;ANIMATE&lt;/<span class='c-red'>span</span>&gt;&lt;/<span class='c-red'>p</span>&gt;</p>
+				<br>
+				&lt;<span class='c-red'>button</span> <span class='c-green'>id</span>=<span class='c-yellow'>"btnSld"</span>&gt;Go!&lt;/<span class='c-red'>button</span>&gt;
+				<br>
+				<br>
+				<br>
+				<p>&lt;<span class="c-red">script</span>&gt;</p>
+				<span class="ind"><span class='c-red'>$</span>(<span class='c-yellow'>"#txtAnmt"</span>).<span class='c-blue'><select id="JQAnmtOpts"><option>toggle</option><option>slideToggle</option><option>fadeToggle</option></select></span>(<span class='c-yellow'>"slow"</span>);</span>
+				<p>&lt;<span class="c-red">/script</span>&gt;</p>
+
+				
+			</span>
+
+			<span class="result" style="border-bottom:none">
+				<h3 class="sub-topic-heading">Output</h3>
+				<span>I can <span id="txtAnmt">ANIMATE</span></span>
+				<br><br>
+				<button id="btnSld">Go!</button>
+			</span>
+
+			
+
+		</div>
+
+	</div>
+
+	
+<script src="js/jquery.js"></script>
+
+</body>
+</html>

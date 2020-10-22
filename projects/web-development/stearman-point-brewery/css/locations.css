@@ -1,0 +1,100 @@
+#all-locations {
+	width: 1027px;
+	margin: 0 auto;
+}
+
+.container-location {
+	position: absolute;
+	top: 250px;
+	display: flex;
+	color: #000;
+}
+
+.location-image {
+	margin-right: 10px;
+}
+
+.location-details {
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+
+	border: 3px solid #3F4EA0;
+	width: 511px;
+	height: 388px;
+
+	margin-left: 10px;
+}
+
+
+/* Address Box */
+.l-d-address {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #3F4EA0;
+	padding: 35px 40px;
+	color: #000;
+}
+
+.l-d-address h3 {
+	font-weight: 500;
+}
+
+.l-d-icons a {
+	display: inline-block;
+}
+
+.l-d-icons img {
+	height: 45px;
+	margin: 12px;
+}
+
+
+/* Contact box */
+.location-contact {
+	display: flex;
+	justify-content: space-between;
+
+	border-bottom: 3px solid #3F4EA0;
+}
+
+.l-c-email {
+	width: 50%;
+}
+
+.l-c-email a {
+	display: block;
+	padding: 30px 40px;
+	font-weight: 500;
+	color: #F05A30;
+	text-decoration: underline;
+}
+
+.l-c-phone {
+	width: 50%;
+	text-align: center;
+}
+
+.l-c-phone a {
+	display: block;
+	background: #3F4EA0;
+	color: #fff;
+	padding: 30px 40px;
+	font-weight: 500;
+}
+
+
+/* Opening Hours */
+.l-hours {
+	padding: 35px 40px;
+	color: #000;
+}
+
+.l-hours h3 {
+	font-weight: 500;
+}
+

@@ -1,0 +1,164 @@
+/* Product Type Thumbnails */
+
+.product-card {
+	max-height: 288px;
+	width: auto;
+}
+
+.product-image {
+	max-height: 288px;
+	width: auto;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* Container */
+
+#container {
+	max-width: 900px;
+	margin: 480px auto 0px auto;
+}
+
+
+/* Grid */
+
+.grid-main {
+	max-width: 900px;
+	margin: 0px auto 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	grid-template-areas:
+		"main main main main main main main main main main main main"
+		"sub sub sub sub sub sub sub sub sub sub sub sub";
+}
+
+.cell-main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+
+	grid-area: main;
+}
+
+.cell-sub {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+	grid-area: sub;
+}
+
+@media only screen and (max-width: 927px) {
+	.product-card, .product-image {
+		height: 250px;
+		width: auto;
+
+		justify-self: center;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.product-card, .product-image {
+		max-height: 200px;
+		max-width: 200px;
+	}
+
+	.cell-sub {
+		grid-template-columns: auto;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.product-card, .product-image {
+		max-height: 170px;
+		max-width: 170px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.product-card, .product-image {
+		max-height: 140px;
+		max-width: 140px;
+	}
+}
+
+
+/* Banner */
+
+.banner {
+	height: 200px;
+}
+
+.banner h3 {
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+.banner:nth-child(1) {
+	background: url('../img/bn-paper.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner:nth-child(1) h3 {
+	text-align: left;
+	width: 200px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 10px;
+}
+
+.banner:nth-child(2) {
+	background: url('../img/bn-bamboo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner:nth-child(2) h3 {
+	color: #fff;
+	text-align: right;
+	width: 200px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.banner:nth-child(1) h3 {
+		font-size: 1.5em;
+		text-align: left;
+		width: 300px;
+		float: right;
+		margin-right: 20px;
+	}
+
+	.banner:nth-child(2) h3 {
+		font-size: 1.5em;
+		width: 300px;
+	}
+}
+
+
+/* Footer */
+
+footer {
+	height: 160px;
+	background: #cfdbd5;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.footer-flex i {
+	margin-left: 20px;
+}

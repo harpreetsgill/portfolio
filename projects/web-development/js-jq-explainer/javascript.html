@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+Harpreet Singh Gill
+A01083219
+MDIA 2294
+ -->
+
+<head>
+
+	<title>JavaScript</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WJFLBHS');</script>
+	<!-- End Google Tag Manager -->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script>
+ 		$( function() {
+   			$( "#tabs" ).tabs({
+      			event: "click"
+    		});
+  		});
+ 	</script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJFLBHS"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<header>
+		<div class="title">
+			<h1>MDIA 2294: Final Project</h1>
+			<h3>Harpreet Singh Gill - A01083219</h3>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="plugin.html">Plug-in</a></li>
+				<li><a href="jquery.html">jQuery</a></li>	
+				<li class="nav-active"><a href="javascript.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<div id="tabs">
+		<div class="topic-headings">
+			<ul>
+    			<li><a href="#tab-variables">Variables</a></li>
+    			<li><a href="#tab-functions">Functions</a></li>
+    			<li><a href="#tab-arrays">Arrays</a></li>
+  			</ul>
+  		</div>
+
+
+	<div class="container" id="tab-variables">
+		
+
+		<!-- Variable Definition -->
+
+		<div class="desc">
+			<h3>Variables</h3>
+
+			<p>A variable is a container that can store different types of information.</p>
+			<p>Try entering a number or text in the box on the right.</p>
+		</div>
+
+		<div class="code">
+			<h3>Code</h3>
+
+			<span><span class="c-blue">var</span> myBox <span class="c-red">=</span> <span class='c-yellow'>"</span></span> <input class="txtCodeBox c-yellow" type="text" id="txtVar"> <span><span class='c-yellow'>"</span>;</span>
+			<br>
+			<br>
+			<span class='c-blue'>console<span style="color:#fff">.</span>log</span>(myBox);</span>
+			<br>
+
+			<button onclick="testVariable();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="varResult"></span>
+		</div>
+
+
+		<!-- Variable Declaration -->
+		<div class="desc">
+			<h3>Variable Declaration</h3>
+
+			<p>Declaration is the creation of a new variable.</p>
+			<p>A variable can be declared using any of the following 4 keywords:</p>
+			<ol>
+				<li>var</li>
+				<li>const</li>
+				<li>let</li>
+				<li>wihtout using any keyword</li>
+			</ol>
+		</div>
+
+		<div class="code">
+			<h3>Code</h3>
+
+			<select id="declOpt" class="c-blue">
+				<option>var</option>
+				<option>const</option>
+				<option>let</option>
+				<option></option>
+			</select>
+
+			<span>myBox <span class="c-red">=</span> <span class="c-yellow">  "</span> apple <span class="c-yellow">"</span>;</span>
+			<br>
+
+			<span><span class='c-blue'>var</span> myBox <span class='c-red'>=</span> <span class='c-yellow'>"</span> orange <span class='c-yellow'>"</span>;</span>
+			<br>
+			<br>
+			<span class='c-blue'>console<span style="color:#fff">.</span>log</span>(myBox);</span>
+			<br>
+			<br>
+			<button onclick="testVarDecl();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="varDeclResult"></span>
+		</div>
+
+
+		<!-- Variable Types -->
+		<div class="desc">
+			<h3>Variable Types</h3>
+
+			<p>6 types of data can be stored in a variable:</p>
+			
+			<ol>
+				<li>strings - any text</li>
+				<li>numbers - any numerical value</li>
+				<li>booleans - true or false</li>
+				<li>symbols</li>
+				<li>null - it is the nonexsitence of a value</li>
+				<li>undefined - when there is no value assigned</li>
+			</ol>
+		</div>
+
+		<div class="code">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>var</span> myBox <span class='c-red' id="spnVarTypEq">=</span> </span>
+			<select id="varTypeOpt" class="c-yellow">
+				<option>" apple "</option>
+				<option> 7 </option>
+				<option> 7 < 10</option>
+				<option>Symbol("apple")</option>
+				<option>null</option>
+				<option></option>
+			</select>
+			<span>;</span>
+			<br>
+			<br>
+			<span class='c-blue'>console<span style="color:#fff">.</span>log</span>(myBox);</span>
+			<br>
+
+			<button onclick="testVarType();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="varTypeResult"></span>
+		</div>
+
+
+		<!-- Variable Scope -->
+		<div class="desc" style="border-bottom: none;">
+			<h3>Variable Scope</h3>
+
+			<p>The scope of a variable defines from where a variable can be accesed from</p>
+			<p>There are 3 scopes:</p>
+			<ol>
+				<li>local - can be accesed only inside a function</li>
+				<li>global - can be accesed from anywhere</li>
+				<li>block - can be accesed only in the block statement</li>
+			</ol>
+		</div>
+
+		<div class="code" style="border-bottom: none;">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>var</span> myBox <span class='c-red'>=</span> <span class='c-yellow'>" I am a global box "</span>;</span><br>
+
+			<select id="varScopeOpt" class="c-white">
+				<option>function addStuff() {</option>
+				<option></option>
+			</select><br>
+
+			<span>myBox <span class='c-red'>=</span> <span class='c-yellow'>" I am a local orange "</span>;</span><br>
+			<span id ="varScpFnClBr" style = "background: #8099f4; padding: 2px 5px;">}</span><br>
+
+
+			<br>
+
+			<span class='c-blue'>console<span style="color:#fff">.</span>log</span>(myBox);</span>
+			<br>
+
+			<button onclick="testVarScope();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result" style="border-bottom: none;">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="varScopeResult"></span>
+		</div>
+
+	</div>
+
+
+	<!-- Functions -->
+	<div class="container" id="tab-functions">
+
+		<!-- Making and Calling a function -->
+
+		<div class="desc">
+			<h3>Functions</h3>
+
+			<p>A function is a set of instructions that is called on need.</p>
+			<p>function keyword is used to define a function.</p>
+			<p>When needed, a function has to be called or invoked.</p>
+		</div>
+
+		<div class="code">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>function</span> <span class='c-green'>writeStuff</span>()<br>{</span>
+			<br>
+			<span class="ind"><span class='c-blue'>console<span style="color:#fff">.</span>log</span>(" I am inside a function ");</span><br>
+			<span>}</span><br>
+
+
+			<select id="OptFuncDefCall" class="c-white">
+				<option></option>
+				<option>writeStuff();</option>
+			</select><br>
+
+
+			<button onclick="testFuncDef();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="funcDefResult"></span>
+		</div>
+
+
+		<!-- Function Parameters -->
+
+		<div class="desc">
+			<h3>Function Parameters</h3>
+
+			<p>A parameter is a value that can be passed from outside a function so that the function can interact with it.</p>
+			<p>More than one parameters can be passed too but they should be seprated by a comma.</p>
+			<p>When needed, a function has to be called or invoked with the value inside the brackets.</p>
+		</div>
+
+		<div class="code">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>function</span> <span class='c-green'>hashTagBorder</span>(<span class='c-orange'>yourText</span>)<br>{</span><br>
+			<span class="ind"><span class='c-blue'>console<span style="color:#fff">.</span>log</span>(<span class='c-yellow'>"###"</span> <span class='c-red'>+</span> yourText <span class='c-red'>+</span> <span class='c-yellow'>"###"</span>);</span><br>
+			<span>}</span><br>
+
+			<br>
+			<span><span class='c-blue'>hashTagBorder</span>("<input type="text" id="txtFuncParam" style="background: #8099f4; border: none; width: 150px;">");</span><br>
+			<br>
+
+			<button onclick="testFuncParam();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="funcParamResult"></span>
+		</div>
+
+
+		<!-- Function Returns -->
+
+		<div class="desc" style="border-bottom: none">
+			<h3>Function Return</h3>
+
+			<p>Functions can return a value using the return keyword</p>
+			<p>A return can stop a function from going ahead.</p>
+		</div>
+
+		<div class="code" style="border-bottom: none">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>function</span> <span class='c-green'>numRet</span>(<span class='c-orange'>yourNum</span>)<br>{</span><br>
+			
+
+			<select id="fnRetOpt" class="ind">
+				<option>return yourNum * 5;</option>
+				<option></option>
+			</select><br>
+
+			<span class="ind"><span class='c-red'>return</span> yourNum <span class='c-red'>*</span> <span class='c-purple'>10</span>;</span><br>
+			<span>}</span><br>
+
+			<br>
+			<span><span class='c-blue'>console<span style="color:#fff">.</span>log</span>(numRet(<input id="numRetParam" type="number" value="3" style="width: 50px; background: #8099f4; border: none;">);</span><br>
+
+
+			<button onclick="testFuncRet();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result" style="border-bottom: none">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="funcRetResult"></span>
+		</div>
+
+	</div>
+
+	<!-- Arrays -->
+	<div class="container" id="tab-arrays">
+
+		<!-- Storing and accesing values from an array -->
+
+		<div class="desc" style="border-bottom: none">
+			<h3>Arrays</h3>
+
+			<p>An array is like a variable but it can store more than one value.</p>
+			<p>An array can store different types of data. They can be numbers, strings, boolean values etc.</p>
+			<p>To access the first value of an array, we have to index it 0 as the position of the items inside the arrays start from 0.</p>
+		</div>
+
+		<div class="code" style="border-bottom: none">
+			<h3>Code</h3>
+
+			<span><span class='c-blue'>var</span> arrMyBox <span class='c-red'>=</span> ["<input id="arrVal1" type="text" style="width: 50px; background: #8099f4; border: none;">", "<input id="arrVal2" type="text" style="width: 50px; background: #8099f4; border: none;">", "<input id="arrVal3" type="text" style="width: 50px; background: #8099f4; border: none;">"];</span> <br>
+
+			<br>
+
+			<span><span class='c-blue'>console<span style="color:#fff">.</span>log</span>(<span class='c-yellow'>" I have "</span> <span class='c-red'>+</span> arrMyBox[<span class='c-purple'>0</span>] <span class='c-red'>+</span> <span class='c-yellow'>", "</span> <span class='c-red'>+</span> arrMyBox[<span class='c-purple'>1</span>] <span class='c-red'>+</span> <span class='c-yellow'>" and "</span> <span class='c-red'>+</span> arrMyBox[<span class='c-purple'>2</span>]);</span><br>
+			
+
+			
+
+
+			<button onclick="testArr();" style="float: right">Run</button>
+		</div>
+
+
+		<div class="result" style="border-bottom: none">
+			<h3>Output</h3>
+
+			<span style="color: #7c94ec">> </span><span id="arrResult"></span>
+		</div>
+
+
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>

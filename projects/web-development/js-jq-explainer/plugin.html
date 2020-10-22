@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+Harpreet Singh Gill
+A01083219
+MDIA 2294
+ -->
+
+<head>
+	<title>Plug-in</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WJFLBHS');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
+
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJFLBHS"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<header>
+		<div class="title">
+			<h1>MDIA 2294: Final Project</h1>
+			<h3>Harpreet Singh Gill - A01083219</h3>
+		</div>
+		<nav>
+			<ul>
+				<li class="nav-active"><a href="plugin.html">Plug-in</a></li>
+				<li><a href="jquery.html">jQuery</a></li>	
+				<li><a href="javascript.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="plugin-container">
+		
+		<!-- Plugin source: https://fancyapps.com/fancybox/3/ -->
+
+		<a data-fancybox="gallery" href="img/1.png"><img src="img/1t.png"></a>
+		<a data-fancybox="gallery" href="img/2.png"><img src="img/2t.png"></a>
+		<a data-fancybox="gallery" href="img/3.png"><img src="img/3t.png"></a>
+		<a data-fancybox="gallery" href="img/4.png"><img src="img/4t.png"></a>
+		<a data-fancybox="gallery" href="img/5.png"><img src="img/5t.png"></a>
+		<a data-fancybox="gallery" href="img/6.jpg"><img src="img/6t.jpg"></a>
+
+
+	</div>
+
+
+	<script>
+ 		$('[data-fancybox="gallery"]').fancybox({
+ 			protect: true,
+ 			buttons: [
+      			"zoom",
+      			"share",
+      			"slideShow",
+      			"fullScreen",
+      			"download",
+     			"thumbs",
+     			"close"
+   			],
+   			transitionEffect: "slide",
+   			fullScreen: {
+    			autoStart: true
+  			},
+
+ 		});
+ 	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+/* 
+Harpreet Singh Gill
+A01083219
+MDIA 2294
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+body {
+	background: #404f7f;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+
+
+/*Header*/
+
+header {
+	background: #2e395f;
+	height: 60px;
+	box-shadow: 0px 9px 40px 0px rgba(0,0,0,.3);
+	padding: 30px;
+}
+
+header h1 {
+	font-size: 1.5em;
+	color: #95adfa;
+}
+
+header h3 {
+	color: #54669c;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.title {
+	float: left;
+
+}
+
+nav {
+	float: right;
+	background: #fff;
+	padding: 0px;
+	margin-top: 5px;
+}
+
+nav ul, nav li {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline;
+	float: right;
+	background: #1a213a;
+}
+
+nav ul li:hover {
+	background: #252f50;
+}
+
+.nav-active {
+	background: #252f50;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: .90em;
+	font-weight: 800;
+	padding: 10px 30px;
+}
+
+
+
+
+/*Container*/
+
+.container {
+	background: #273152;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 1023px;
+	margin: 0 auto 50px auto;
+	padding: 20px;
+	font-size: .9em;
+	box-shadow: 1px 0px 20px 0px rgba(0,0,0,.3);
+	z-index: 1000;
+}
+
+.jq-container {
+	background: #273152;
+	width: 1023px;
+	margin: 50px auto 50px auto;
+	padding: 20px;
+	font-size: .9em;
+	box-shadow: 1px 0px 20px 0px rgba(0,0,0,.3);
+	z-index: 1000;
+}
+
+.plugin-container {
+	background: #273152;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 1023px;
+	margin: 50px auto 50px auto;
+	padding: 20px;
+	font-size: .9em;
+	box-shadow: 1px 0px 20px 0px rgba(0,0,0,.3);
+	z-index: 1000;
+}
+
+.plugin-container a {
+	margin: 45px;
+}
+
+.jq-topic-heading {
+	background: #3d4e84;
+	width: 200px;
+	padding: 10px 10px 5px 10px;
+	cursor: pointer;
+	border-bottom: 5px solid #3d4e84;
+}
+
+.jq-topic-heading:hover {
+	border-bottom: 5px solid rgba(0,0,0,0.6);
+}
+
+.jq-expl {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+
+h3 {
+	margin-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	color: #5167a5;
+}
+
+button {
+	background: #c61d54;
+	padding: 6px 10px;
+	border: none;
+	font-weight: 800;
+	color: #fff;
+	position: relative;
+	bottom: 1px;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px rgba(0,0,4px ,0.3);
+}
+
+button:hover {
+	background: #9a133f;
+	color: #fff;
+}
+
+
+
+/*Tabs*/
+
+.topic-headings {
+	margin: 0 auto;
+	width: 340px;
+	text-align: center;
+	background: #273152;
+	z-index: 99;
+	font-size: .90em;
+	font-weight: 800;
+}
+
+.topic-headings ul {
+	padding-inline-start: 0px;
+	padding: 10px 0;
+	margin: 20px 0 0 0;
+}
+
+.topic-headings ul li {
+	list-style: none;
+	display: inline;
+	padding: 5px 10px;
+}
+
+.topic-headings ul li:hover {
+	border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+
+.topic-headings ul li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+}
+
+
+
+/*Code*/
+
+.code, .code input, .code select, .result span {
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.jq-container h3 {
+	font-size: 1em;
+	font-weight: 800;
+	color: #fff;
+}
+
+
+
+/*Code Color*/
+
+.ind {
+	margin-left: 20px;
+}
+
+.c-blue {
+	color: #37eaff;
+}
+
+.c-red {
+	color: #ff3737;
+}
+
+.c-yellow {
+	color: #fffd37;
+}
+
+.c-white {
+	color: #fff;
+}
+
+.c-green {
+	color: #a6ff65;
+}
+
+.c-orange {
+	color: #fcbc4d;
+}
+
+.c-purple {
+	color: #c937ff;
+}
+
+.txtCodeBox {
+	border: 0;
+	background: #8099f4;
+	width: 100px;
+	color: #fff;
+	padding: 0 5px;
+}
+
+select {
+	border: none;
+	-webkit-appearance: none;
+	background: #8099f4;
+	padding: 2px 5px;
+}
+
+
+
+/* Boxes */
+.code, .result, .desc {
+	padding: 20px;
+	width: 300px;
+	border-bottom: 1px solid #465792;
+
+}
+
+.code {
+	border-right: 1px solid #465792;
+	border-left: 1px solid #465792;
+}
+
+
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.sub-topic-heading {
+	margin-bottom: 10px !important;
+	color: #5167a5 !important;
+	font-size: 1.17em !important;
+
+}
+

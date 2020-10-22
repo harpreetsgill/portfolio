@@ -1,0 +1,446 @@
+/*@import url('../fonts/BrutGothic-Regular.otf');*/
+
+body {
+	font-family: 'Brut Gothic', sans-serif;
+	background-color: #E3EBF1;
+}
+
+
+#container {
+	max-width: 1300px;
+	margin: 30px auto;
+}
+
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	/*margin-bottom: 30px;*/
+
+	/*height: 731px;*/
+	height: calc(100vh - 55px);
+	background-image: url('../images/hero.jpg');
+	background-size: cover;
+
+	border: 3px solid #F05A30;
+	z-index: -10;
+}
+
+#header-about {
+	background-image: url('../images/about.jpg');
+	background-size: cover;
+
+	height: 2000px;
+
+	border: 3px solid #F05A30;
+	z-index: -10;
+}
+
+/*header h1 {
+	display: inline;
+}*/
+
+#logo {
+	margin: 28px 46px;
+}
+
+/* Logotype */
+#logo h1 {
+	display: inline-block;
+	color: #F05A30;
+	font-size: 31px;
+	line-height: 36px;
+	margin-left: 46px;
+}
+
+nav {
+	margin: 46px;
+	font-size: 23px;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 45px;
+}
+
+nav a {
+	color: #3F4EA0;
+}
+
+.nav-active {
+	border-bottom: 3px solid #F05A30;
+	padding-bottom: 5px;
+}
+
+nav a:hover {
+	border-bottom: 3px solid #F05A30;
+	padding-bottom: 5px;
+}
+
+.arrow-down {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	bottom: 50px;
+}
+
+
+/* Hero Content */
+#hero-copy {
+	width: 435px;
+	min-height: 330px;
+
+	position: absolute;
+	top: 350px;
+	margin-left: 139px;
+	color: #fff;
+}
+
+#hero-copy h2 {
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+
+#hero-copy h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	line-height: 26px;
+	margin-bottom: 36px;
+}
+
+#hero-about-copy {
+	min-width: 435px;
+	min-height: 330px;
+
+	position: absolute;
+	top: 350px;
+	margin-left: 139px;
+	color: #fff;
+}
+
+#hero-about-copy h2 {
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+
+#hero-about-copy h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	line-height: 26px;
+	margin-bottom: 36px;
+}
+
+.button-red-hero {
+	width: 157px;
+	height: 53px;
+	background: #F05A30;
+
+	font-size: 29px;
+	color: #fff;
+	padding: 19px 28px;
+}
+
+
+/* About Copy */
+
+.about-copy-wide {
+	width: 1040px;
+	margin-bottom: 95px !important;
+}
+
+
+/* Beer Containers */
+#container-beers {
+	display: flex;
+	background-color: #fff;
+}
+
+.card-beer, .card-beer-more {
+	/*width: 424px;*/
+	/*height: 493px;*/
+	border: 3px solid #F05A30;
+}
+
+.card-beer:nth-child(2) {
+	border-left: none;
+	border-right: none;
+}
+
+.card-beer-more {
+	padding: 60px;
+}
+
+.card-beer-more h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 25px;
+	line-height: 28px;
+}
+
+.card-beer img {
+	height: 434px;
+	width: 424px;
+	background-size: cover;
+}
+
+.card-btns {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 53px;
+	width: calc(100% + 6px);
+
+	position: relative;
+	/*bottom: -3px;*/
+	left: -3px;
+
+	font-size: 24px;
+}
+
+.card-btn {
+	width: calc(100% / 3);
+	/*height: 53px;*/
+	text-align: center;
+	border: 3px solid #F05A30;
+	padding: 15px 0;
+}
+
+.card-btn:nth-child(2) {
+	border-left: none;
+	border-right: none;
+}
+
+.card-btns a {
+	display: block;
+	height: 100%;
+}
+
+.card-button-red {
+	background-color: #F05A30;
+}
+
+.card-button-red a {
+	color: #fff;
+}
+
+.card-more-btn {
+	display: block;
+	width: calc(100% / 3);
+	text-align: center;
+	border: 3px solid #F05A30;
+	padding: 15px 0;
+	color: #F05A30;
+	margin-top: 37px;
+}
+
+.card-more-btn:hover {
+	background-color: #F05A30;
+	color: #fff;
+}
+
+
+/* Events */
+#container-events {
+	display: flex;
+	margin-top: 30px;
+	background: #C7C7C7;
+	height: 440px;
+}
+
+#event-dates li {
+	padding: 40px;
+	font-size: 30px;
+}
+
+#event-names {
+	min-width: 400px;
+}
+
+#event-names li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	padding: 40px;
+	font-size: 30px;
+}
+
+#event-desc {
+	padding: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+}
+
+#event-desc h4 {
+	font-weight: 400;
+	line-height: 39px;
+}
+
+.btn-blue-hollow {
+	font-family: 'Brut Gothic';
+	display: block;
+	width: calc(100% / 3);
+	text-align: center;
+	border: 3px solid #404FA2;
+	padding: 15px 0;
+	color: #404FA2;
+	margin-top: 37px;
+}
+
+.btn-blue-hollow:hover {
+	background-color: #404FA2;
+	color: #C7C7C7;
+}
+
+
+/* Locations */
+#container-locations {
+	display: flex;
+	background-color: #fff;
+	height: 485px;
+	border: 3px solid #000;
+	margin-top: 30px;
+	position: relative;
+}
+
+.location-map {
+	border-right: 3px solid #000;
+}
+
+.location-address {
+	padding: 85px;
+}
+
+.location-address h1 {
+	margin-bottom: 30px;
+}
+
+.map-nav-btns {
+	position: absolute;
+	right: 85px;
+	bottom: 85px;
+}
+
+.map-nav-btns a {
+	border: 3px solid #404FA2;
+	display: inline-block;
+	padding: 10px 17px;
+	margin: 0;
+}
+
+.map-nav-btns a:nth-child(1) {
+	margin-right: -8px;
+}
+
+.map-nav-btns a img {
+	height: 25px;
+}
+
+
+/* Contact Form */
+#contact-form {
+	position: absolute;
+	top: 275px;
+	margin-left: 139px;
+	color: #000;
+	font-family: 'Brut Gothic';
+	width: 1000px;
+}
+
+#contact-form h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+#contact-form input, textarea {
+	border: 3px solid #F05A30;
+	font-family: 'Brut Gothic';
+	color: #404FA2;
+	width: 100%;
+	padding: 10px;
+	font-size: 21px;
+	display: block;
+	margin-top: -3px;
+}
+
+#contact-form textarea {
+	height: 200px;
+}
+
+#contact-form button {
+	margin-top: 20px;
+	border: 3px solid #F05A30;
+	font-family: 'Brut Gothic';
+	padding: 10px 20px;
+	font-size: 21px;
+	color: #F05A30;
+	background-color: #fff;
+}
+
+#contact-form button:hover {
+	color: #fff;
+	background-color: #F05A30;
+	cursor: pointer;
+} 
+
+
+/* Footer */
+footer {
+	background: #505050;
+	color: #fff;
+	/*height: 275px;*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+#footer-container {
+	max-width: 1300px;
+	margin-top: 30px;
+	margin: 0 auto;
+}
+
+#footer-flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+#footer-left {
+	display: flex;
+	align-items: center;
+}
+
+#footer-left img {
+	width: 100px;
+	margin-right: 40px;
+}
+
+#footer-left h2 {
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 33px;
+}
+
+#footer-right {
+	text-align: right;
+}
+
+#footer-right a {
+	margin-left: 13px;
+}
+
+#f-r-sm {
+	margin-bottom: 30px;
+}
+
+#f-r-links a {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: 15px;
+}
+
+#f-copyright {
+	text-align: center;
+	padding-bottom: 30px;
+}
+

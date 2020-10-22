@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403</title>
+
+	
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico"type="image/x-icon">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div id="container">
+
+		<main>
+			<div id="intro" style="height: 100%;">
+				<h1 class="gray-text intro-text">
+					<span>Error 403: Forbidden</span>
+				</h1>
+			</div>
+
+			<div id="logo" style="margin-top: 50px;">
+				<a href="index.html">
+					<img class="logo-mark" src="images/h-symbol.svg">
+					<h1 class="nav-item">harpreet singh gill</h1>
+				</a>
+			</div>
+		</main>
+
+	</div>
+
+</body>
+<script src="js/script.js"></script>
+</html>

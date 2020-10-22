@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Group_209" data-name="Group 209" transform="translate(0.286)" style="isolation: isolate">
+    <g id="Rectangle_551" data-name="Rectangle 551" transform="translate(-0.286)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="62" height="62" stroke="none"/>
+      <rect x="1.5" y="1.5" width="59" height="59" fill="none"/>
+    </g>
+    <g id="Facebook" transform="translate(24.023 7)" style="isolation: isolate">
+      <rect id="Rectangle_547" data-name="Rectangle 547" transform="translate(18.692)" fill="none"/>
+      <path id="Path_1" data-name="Path 1" d="M88.278,24.427V13.3h3.8l.543-4.343H88.278V6.242c0-1.221.407-2.171,2.171-2.171h2.307V.136c-.543,0-1.9-.136-3.393-.136C86.107,0,83.8,2.036,83.8,5.7V8.956H80V13.3h3.8V24.427Z" transform="translate(-80 10.573)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

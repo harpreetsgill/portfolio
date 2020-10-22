@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Item - Align & Order</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/nav-bar.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://kit.fontawesome.com/389c2c941e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="nav-btn nav-bar">
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png"></a>
+		</div>
+
+		<div class="nav-links">
+			<ul class="nav-bar-collapse" id="collapseMenu">
+				<li><a href="about.html">About</a></li>
+				<li>
+					<a id="prodLink" class="nav-active" onmouseover="toggleProdList()" onclick="toggleProdList()" href="#">Products</a>
+					<ul id="product-list">
+						<li><a href="clocks.html">Clocks</a></li>
+						<li><a href="lamps.html">Lamps</a></li>
+						<li><a href="chairs.html">Chairs</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<div class="nav-cart">
+				<a href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i>	</a>
+			</div>
+
+			<div class="menu-toggle" id="menuToggle" onclick="toggleMenu();">
+				<i class="fas fa-bars fa-lg"></i>
+			</div>
+		</div>
+
+	</nav>
+
+
+
+	<div id="container" class="product-container" style="margin-top: 0px">
+
+		<h2><a href="chairs.html">Chairs</a> > Item</h2>
+
+		<div class="item-imgs-container">
+			
+			<div class="item-main-img">
+				<img id="mainImg" src="img/item/main-1.jpg">
+			</div>
+
+			<div class="item-thumbs">
+				<div class="thumb"><img src="img/item/main-1.jpg" onclick="setItemImage(1);"></div>
+				<div class="thumb"><img src="img/item/main-2.jpg" onclick="setItemImage(2);"></div>
+				<div class="thumb"><img src="img/item/main-3.jpg" onclick="setItemImage(3);"></div>
+				<div class="thumb"><img src="img/item/main-4.jpg" onclick="setItemImage(4);"></div>
+			</div>
+
+		</div>
+
+		<div class="item-actions">
+			<div class="left-btns">
+				<button class="circ-btn"><i class="fas fa-share-alt"></i></button>
+				<button class="circ-btn"><i class="fas fa-shopping-cart"></i></button>
+			</div>
+			<div class="right-btns">
+				<h2>$40.02</h2><button>BUY</button>
+			</div>
+		</div>
+
+		<h3>Chair 1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<h3>Description</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Malesuada pellentesque elit eget gravida. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Pretium quam vulputate dignissim suspendisse. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Proin gravida hendrerit lectus a. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Purus semper eget duis at tellus at urna. Cras ornare arcu dui vivamus arcu. Quam quisque id diam vel quam. Tristique senectus et netus et malesuada fames ac. Nunc lobortis mattis aliquam faucibus purus in. Ut lectus arcu bibendum at. Faucibus et molestie ac feugiat sed lectus. Amet est placerat in egestas. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. At consectetur lorem donec massa sapien.</p>
+
+		
+	</div>	
+
+	<footer>
+		<div class="footer-flex">
+			<div>
+				<h2>Contact</h2>
+				<a href="mailto:faf">abc@gmail.com</a>
+			</div>
+
+			<div>
+				<h2 style="text-align: right">Follow</h2>
+				<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+			</div>
+		</div>
+		<div>
+			<p style="text-align:center">&copy; 2020 <a href="https://gillharpreet.com">Harpreet Singh Gill</a></p>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

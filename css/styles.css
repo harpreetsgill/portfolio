@@ -17,7 +17,7 @@ body {
 
 /* Colors */
 .gray-text {
-	color: #424A61;
+	color: #B6BDC5;
 }
 .orange-text {
 	color: #EA876C;
@@ -60,7 +60,7 @@ header {
 }
 
 #logo h1 {
-	color: #424A61;
+	color: #B6BDC5;
 }
 
 #logo-resp {
@@ -71,7 +71,7 @@ header {
 }
 
 #logo-resp h1 {
-	color: #424A61;
+	color: #B6BDC5;
 }
 
 #logo, nav ul li {
@@ -227,7 +227,7 @@ footer a {
 
 .proj-info-detail {
 	font-size: 20px;
-	color: #555;
+	color: #BBBBBB;
 }
 
 

@@ -312,6 +312,21 @@ p.proj-step-copy {
 	background-color: #b60f40;
 }
 
+.live-btn-top {
+	margin-top: 15px;
+	display: block;
+	background-color: #e11a54;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.live-btn-top:hover {
+	background: #3e4457;
+	color: #fff;
+}
+
 
 /* About text */
 #about-text p {

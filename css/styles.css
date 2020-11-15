@@ -230,6 +230,11 @@ footer a {
 	color: #BBBBBB;
 }
 
+.proj-info-detail-link {
+	font-size: 20px;
+	color: #BBBBBB;
+	text-decoration: underline;
+}
 
 .proj-card-exp {
 	width: 50%;

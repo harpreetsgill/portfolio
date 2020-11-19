@@ -126,13 +126,38 @@ main {
 	line-height: 96px;
 }
 
+.dev {
+	-webkit-text-stroke: 1px #97A4FD;
+	color: #292E3D;
+}
+
+.dev:hover {
+	color: #97A4FD;
+}
+
+.des {
+	-webkit-text-stroke: 1px #EA876C;
+	color: #292E3D;
+}
+
+.des:hover {
+	color: #EA876C;
+}
+
+.creat {
+	-webkit-text-stroke: 1px #79C7A1;
+	color: #292E3D;
+}
+
+.creat:hover {
+	color: #79C7A1;
+}
+
 #scroll-icon {
 	display: block;
 	margin: 0 auto;
 	margin-top: 200px;
 }
-
-
 
 .proj-card {
 	display: flex;

@@ -3,8 +3,6 @@
     src: url('../fonts/bahnschrift.ttf');
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
-
 body {
 	background: #292E3D;
 	font-family: 'Bahnschrift', 'Roboto', sans-serif;
@@ -138,25 +136,33 @@ main {
 }
 
 .dev:hover {
+	-webkit-text-stroke: 0px;
 	color: #97A4FD;
+	font-weight: 800;
 }
 
 .des {
 	-webkit-text-stroke: 1px #EA876C;
 	color: #292E3D;
+	font-weight: 100;
 }
 
 .des:hover {
+	-webkit-text-stroke: 0px;
 	color: #EA876C;
+	font-weight: 800;
 }
 
 .creat {
 	-webkit-text-stroke: 1px #79C7A1;
 	color: #292E3D;
+	font-weight: 100;
 }
 
 .creat:hover {
+	-webkit-text-stroke: 0px;
 	color: #79C7A1;
+	font-weight: 800;
 }
 
 #scroll-icon {

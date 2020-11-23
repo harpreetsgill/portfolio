@@ -134,6 +134,7 @@ main {
 .dev {
 	-webkit-text-stroke: 1px #97A4FD;
 	color: #292E3D;
+	font-weight: 100;
 }
 
 .dev:hover {

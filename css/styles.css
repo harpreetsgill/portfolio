@@ -354,11 +354,15 @@ p.proj-step-copy {
 
 
 /* About text */
-#about-text p {
-	font-size: 50px;
-	line-height: 56px;
+#about-text {
+	font-size: 25px;
+	line-height: 29px;
 }
 
+#about-text ul li {
+	list-style-type: disc;
+	margin-left: 40px;
+}
 
 /* Contact */
 .contact-page-mail {

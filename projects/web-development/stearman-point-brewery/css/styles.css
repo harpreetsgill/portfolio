@@ -1,5 +1,13 @@
 /*@import url('../fonts/BrutGothic-Regular.otf');*/
 
+@font-face {
+    font-family: 'Brut Gothic';
+    src: url('../fonts/brutgothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/brutgothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	font-family: 'Brut Gothic', sans-serif;
 	background-color: #E3EBF1;
@@ -16,9 +24,7 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
-	/*margin-bottom: 30px;*/
-
-	/*height: 731px;*/
+	text-transform: uppercase;
 	height: calc(100vh - 55px);
 	background-image: url('../images/hero.jpg');
 	background-size: cover;
@@ -277,6 +283,7 @@ nav a:hover {
 
 .btn-blue-hollow {
 	font-family: 'Brut Gothic';
+	text-transform: uppercase;
 	display: block;
 	width: calc(100% / 3);
 	text-align: center;
@@ -343,6 +350,7 @@ nav a:hover {
 	margin-left: 139px;
 	color: #000;
 	font-family: 'Brut Gothic';
+	text-transform: uppercase;
 	width: 1000px;
 }
 
@@ -354,6 +362,7 @@ nav a:hover {
 #contact-form input, textarea {
 	border: 3px solid #F05A30;
 	font-family: 'Brut Gothic';
+	text-transform: uppercase;
 	color: #404FA2;
 	width: 100%;
 	padding: 10px;
